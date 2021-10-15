@@ -1,0 +1,77 @@
+ @import './variables.scss';
+
+.login{
+  width: 100vw;
+  height: 100vh;
+  background: #F0F2F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-wrapper{
+    width: 70%;
+    height: 70%;
+    display: flex;
+  }
+  &-left, &-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &-logo{
+    font-size: 50px;
+    font-weight: 800;
+    color: #1775EE;
+    margin-bottom: 10px;
+  }
+  &-desc{
+    font-size: 24px;
+  }
+  &-box{
+    height: 340px;
+    padding: 20px;
+    background: #FFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &-input{
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    outline: none;
+    font-size: 18px;
+    padding-left: 20px;
+  }
+  &-btn_login{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background: #1775EE;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+  }
+  &-forgot{
+    text-align: center;
+    color: #1775EE;
+    cursor: pointer;
+  }
+  &-btn_register{  
+    align-self: center;
+    width: 70%;
+    height: 50px;
+    border-radius: 10px;
+    background: #42B72A;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+  }
+}

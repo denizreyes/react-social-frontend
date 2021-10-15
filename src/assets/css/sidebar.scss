@@ -1,0 +1,75 @@
+@import './variables.scss';
+
+.sidebar{
+  flex: 2.5;
+  height: calc(100vh - $tapbarHeight);
+  position: sticky;
+  top: $tapbarHeight;
+  overflow-y: scroll;
+  min-width: 300px;
+  &::-webkit-scrollbar{
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track{
+    background: #FFF;
+  }
+  &::-webkit-scrollbar-thumb{
+    background: rgb(179, 179, 179);
+    border-radius: 2px;
+  }
+  &-wrapper{
+    padding: 20px;
+    background: #FFF;
+  }
+  &-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    &-item{
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      cursor: pointer;
+      &:hover{
+        color: $primary;
+      }
+    }
+    .icon{
+      margin-right: 15px;
+    }
+  }
+  &-btn{
+    width: 150px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    &:hover{
+      background: $primary;
+      color: #FFF;
+    }
+  }
+  &-hr{
+    margin: 20px 0;
+  }
+  &-friend{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    &-item{
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      .image{
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 10px;
+      }
+    }
+  }
+}
